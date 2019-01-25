@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <title>クリエイター川柳</title>
+<style>
+.today_ikku {border: 1px solid #ccc; width: 300px; margin: 0 auto 20px;}
+</style>
 </head>
 <body>
 <article>
