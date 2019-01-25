@@ -23,8 +23,11 @@
 </form>
 <section class="your_ikku">
 <h3>あなたの一句：</h3>
-<p class="echo"></p>
-<p>※HTMLだけではなにも動かない。</p>
+<p class="echo"><?php 
+$ikku = $_GET["ikku"];
+echo $ikku;	
+?></p>
+<p>※$_GETはURLのパラメータにも表示される。</p>
 </section>
 </section><!--get-->
 <section class="today_ikku post">
@@ -35,8 +38,11 @@
 </form>
 <section class="your_ikku">
 <h3>あなたの一句：</h3>
-<p class="echo"></p>
-<p>※HTMLだけではなにも動かない。</p>
+<p class="echo"><?php 
+$ikku = $_POST["ikku"];
+echo $ikku;	
+?></p>
+<p>※$_POSTは内部的に送信される。</p>
 </section>
 </section><!--post-->
 <p class="name">by <a href="https://www.i-ryo.com" target="_blank">イイダリョウ</a></p>
