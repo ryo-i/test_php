@@ -11,7 +11,7 @@
 <section class="today_ikku get">
 <h2>今日の一句（$_GET）</h2>
 <form method="get" action="">
-	<input type="texxt" name="ikku">
+	<input type="text" name="ikku">
 	<input type="submit" name="yomu" value="詠む">
 </form>
 <section class="your_ikku">
@@ -26,7 +26,7 @@ echo $ikku;
 <section class="today_ikku post">
 <h2>今日の一句（$_POST）</h2>
 <form method="post" action="">
-	<input type="texxt" name="ikku">
+	<input type="text" name="ikku">
 	<input type="submit" name="yomu" value="詠む">
 </form>
 <section class="your_ikku">
