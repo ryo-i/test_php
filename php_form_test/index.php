@@ -19,7 +19,7 @@
 $ikku = $_GET["ikku"];
 echo $ikku;	
 ?></p>
-<p>※$_GETはURLのクエリパラメーターにも表示される！</p>
+<p>※$_GETはURLのパラメータにも表示される。</p>
 </section>
 </section><!--get-->
 <section class="today_ikku post">
@@ -34,7 +34,7 @@ echo $ikku;
 $ikku = $_POST["ikku"];
 echo $ikku;	
 ?></p>
-<p>※$_GETはURLのクエリパラメーターにも表示される！</p>
+<p>※$_POSTは内部的に送信される。</p>
 </section>
 </section><!--post-->
 <p>by <a href="https://www.i-ryo.com" target="_blank">イイダリョウ</a></p>
