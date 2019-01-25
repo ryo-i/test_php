@@ -23,7 +23,7 @@ echo $ikku;
 </section>
 </section><!--get-->
 <section class="today_ikku post">
-<h2>今日の一句（$_GET）</h2>
+<h2>今日の一句（$_POST）</h2>
 <form method="post" action="">
 	<input type="texxt" name="ikku">
 	<input type="submit" name="yomu" value="詠む">
