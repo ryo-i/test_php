@@ -13,13 +13,13 @@
 	<input type="texxt" name="ikku">
 	<input type="submit" name="yomu" value="詠む">
 </form>
-</section>
 <section class="your_ikku">
-<h2>あなたの一句：</h2>
+<h3>あなたの一句：</h3>
 <p><?php 
 $ikku = $_GET["ikku"];
 echo $ikku;	
 ?></p>
+</section>
 </section>
 <p>by <a href="https://www.i-ryo.com" target="_blank">イイダリョウ</a></p>
 
