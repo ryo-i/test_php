@@ -3,14 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>クリエイター川柳</title>
-<style>
-	h1 ,
-	.name{text-align: center;}
-	.today_ikku {border: 1px solid #ccc; border-radius: 10px; width: 300px; margin: 0 auto 20px; padding: 20px;}
-	input[name="ikku"] {height: 2em; width: 70%; margin: 0 10px 0 0;}
-	input[name="yomu"] {height: 2em; width: 20%; background: #eee; border: 1px solid #ccc;}
-	input[name="yomu"]:hover {opacity: 0.7; cursor: pointer;}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <article>
@@ -23,8 +16,11 @@
 </form>
 <section class="your_ikku">
 <h3>あなたの一句：</h3>
-<p class="echo"></p>
-<p>※HTMLだけではなにも動かない。</p>
+<p class="echo"><?php 
+$ikku = $_GET["ikku"];
+echo $ikku;	
+?></p>
+<p>※$_GETはURLのパラメータにも表示される。</p>
 </section>
 </section><!--get-->
 <section class="today_ikku post">
@@ -35,10 +31,14 @@
 </form>
 <section class="your_ikku">
 <h3>あなたの一句：</h3>
-<p class="echo"></p>
-<p>※HTMLだけではなにも動かない。</p>
+<p class="echo"><?php 
+$ikku = $_POST["ikku"];
+echo $ikku;	
+?></p>
+<p>※$_POSTは内部的に送信される。</p>
 </section>
 </section><!--post-->
+<nav class="link"><a href="index.html">HTML版へ</a></nav>
 <p class="name">by <a href="https://www.i-ryo.com" target="_blank">イイダリョウ</a></p>
 
 </article>
