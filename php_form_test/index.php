@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>クリエイター川柳</title>
+<title>クリエイター川柳（PHP版）</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
